@@ -1,0 +1,452 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+header .navbar .nav-link {
+    color: #ffffff;
+}
+
+header .navbar .nav-link:hover {
+    color: #00aaff;
+}
+
+/* Hero Section styling */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* About Section styling */
+.about-section {
+    padding: 60px 0;
+    background-color: #1c1c1c;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 35px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Accommodations Section styling */
+.accommodations-section {
+    padding: 60px 0;
+    background-color: #8b0000;
+    /* Dark Red */
+}
+
+.accommodations-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.accommodations-section p {
+    font-size: 18px;
+}
+
+.accommodations-section .card {
+    border: none;
+    background-color: #2c2c2c;
+    /* Dark Background for Cards */
+}
+
+.accommodations-section .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accommodations-section .card-body {
+    padding: 20px;
+}
+
+.accommodations-section .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.accommodations-section .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Menu Section styling */
+.menu-section {
+    padding: 60px 0;
+    background-color: #4c3228;
+    /* Firebrick */
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-section p {
+    font-size: 18px;
+}
+
+.menu-section .card {
+    border: none;
+    background-color: #2c2c2c;
+    /* Dark Background for Cards */
+}
+
+.menu-section .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-section .card-body {
+    padding: 20px;
+}
+
+.menu-section .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-section .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offers-section {
+    background-color: #5e1923;
+    color: white;
+    padding: 60px 0;
+}
+
+.offers-section .text-center h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.offers-section .text-center p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.offer-card {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+}
+
+.offer-card .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.offer-card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.offer-card .card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #5e1923;
+}
+
+.offer-card .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offer-card .btn-primary {
+    background-color: #5e1923;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.offer-card .btn-primary:hover {
+    background-color: #41101a;
+}
+
+.offers-section {
+    background-image: url('your-gif-burger.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.activities-section {
+    background-color: #d5c0ff;
+    color: #333;
+    padding: 50px 0;
+}
+
+.activities-section .text-center h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.activities-section .text-center p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.activity-card {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border: radius 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transfrom 0.3s ease-in-out;
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+}
+
+.activity-card .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.activity-card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.activity-card .card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #d9534f;
+}
+
+.activity-card .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #8e2517;
+    /*color: #1f2939;*/
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-top: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul li address {
+    font-style: normal;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(cyan, transparent), linear-gradient(-45deg, rgb(255, 77, 0), transparent), linear-gradient(45deg, rgb(61, 225, 165), transparent);
+    background-blend-mode: multiply;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formContainer {
+    position: relative;
+    margin: 8% auto;
+    min-height: 60%;
+    width: 50%;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: white;
+    padding: 0px 0px 5px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.formHeader {
+    text-align: center;
+    padding-right: 70px;
+}
+
+.formContentContainer {
+    margin-top: 15%;
+}
+
+.formInput {
+    display: block;
+    margin: 0px 0px 15px 20px;
+    padding: 4px;
+    width: 80%;
+    height: 5%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 12px;
+}
+
+.submitButton {
+    background: dodgerblue;
+    color: white;
+    margin: 10px 20px;
+    width: 80%;
+    height: 8%;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.CenteRangle {
+    position: absolute;
+    left: 570;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .about-section img {
+        margin-top: 20px;
+    }
+
+    .accommodations-section h2 {
+        font-size: 28px;
+    }
+
+    .accommodations-section .card-title {
+        font-size: 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 28px;
+    }
+
+    .menu-section .card-title {
+        font-size: 20px;
+    }
+}
